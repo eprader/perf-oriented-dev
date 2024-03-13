@@ -137,25 +137,68 @@ NUMA:
 ```
 
 To run the benchmark on a local machine run `local.sh` within the `small_samples/qap` folder.
-
+For the lcc the `lcc.sh` script will deploy a job for each command.
 > [!NOTE] 
 > `run_n_mean_variance.sh` needs to be in the same folder as well.
 
+There is no synchronization for the file access to the csv file.
+This poses largely a non issue because the execution times of each run are different enough that they
+rarely collide.
+
+> I have observed some inconsistencies with the generation of the output files.
+> Therefore I recalculated some of the values from the csv file.
+> Could not debug it myself...
+
 ## delannoy
+local:
 Mean execution time: 54.6976342735 seconds
 Variance: .0036329746 seconds^2
 
+lcc:
+Mean execution time: 136.86 seconds
+Variance: .62 seconds^2
+
+## filegen
+local:
 Mean execution time: 419.0089523825 seconds
 Variance: 20518.3895121736 seconds^2
 
+lcc:
+Mean execution time: 150.85 seconds
+Variance: 5970.11 seconds^2
+
+## mmul
+local:
 Mean execution time: 1.1941223612 seconds
 Variance: .0001142082 seconds^2
 
+lcc:
+Mean execution time: 24.10 seconds
+Variance: .0060215962 seconds^2
+
+## nbody
+local:
 Mean execution time: .5691654300 seconds
 Variance: .0000004983 seconds^2
 
+lcc:
+Mean execution time: 2.58 seconds
+Variance: .0001085250 seconds^2
+
+## qap
+local:
 Mean execution time: .0042522652 seconds
 Variance: .0000010671 seconds^2
 
+lcc:
+Mean execution time: 3.46 seconds
+Variance: .0000321340 seconds^2
+
+## filesearch
+local:
 Mean execution time: .1174281897 seconds
 Variance: .0266639543 seconds^2
+
+lcc:
+Mean execution time: .51 seconds
+Variance: .4454150502 seconds^2
