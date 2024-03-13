@@ -17,6 +17,8 @@
           buildInputs = with pkgs; [
             cmake
             ninja
+            bc
+            hwloc
           ];
 
           shellHook = ''

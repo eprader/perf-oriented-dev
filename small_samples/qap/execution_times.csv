@@ -1,0 +1,25 @@
+Command,Runtime
+"../build/delannoy 15",54.790656139
+"../build/delannoy 15",54.706674178
+"../build/delannoy 15",54.629445166
+"../build/delannoy 15",54.663761611
+"../build/filegen 100 150 1024 1048576",258.259186568
+"../build/filegen 100 150 1024 1048576",643.250438398
+"../build/filegen 100 150 1024 1048576",431.609611434
+"../build/filegen 100 150 1024 1048576",342.916573130
+"../build/mmul",1.201469782
+"../build/mmul",1.204859858
+"../build/mmul",1.192954625
+"../build/mmul",1.177205180
+"../build/nbody",.570085146
+"../build/nbody",.569615539
+"../build/nbody",.568539107
+"../build/nbody",.568421928
+"../build/qap",.005886713
+"../build/qap",.004360790
+"../build/qap",.003198648
+"../build/qap",.003562910
+"../build/filesearch",.400255399
+"../build/filesearch",.022499967
+"../build/filesearch",.023158518
+"../build/filesearch",.023798875
