@@ -75,10 +75,11 @@ if __name__ == "__main__":
 
             # HACK: Busy wait for job to finish
             while not os.path.exists(file_path):
-                time.sleep(1)
+                time.sleep(3)
 
             with open(file_path, "r") as file:
-                profiles.extend(json.load(file))
+                file = json.load(file)
+                profiles.extend(file)
 
             if os.path.exists(file_path):
                 os.remove(file_path)
