@@ -17,7 +17,7 @@ On the `lcc` use `sbatch job.sh`.
 
 ## Local
 ### s
-| %     | cumulative | self     | self       | total   |           
+| %     | cumulative | self     | self       | total   |         |             |
 | time  | seconds    | seconds  | calls      | ms/call | ms/call | name        |
 |-------|------------|----------|------------|---------|---------|-------------|
 | 23.69 | 147.52     | 147.52   | 4970649601 | 0.00    | 0.00    | compute_rhs |
