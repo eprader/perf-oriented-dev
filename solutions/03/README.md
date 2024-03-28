@@ -16,6 +16,14 @@ On a local machine run the job.sh. e.g `bash job.sh`.
 On the `lcc` use `sbatch job.sh`.
 
 ## Local
+
+Observations: 
+ - `matmul_sub` consistently takes a lot of runtime due to its high number of invocations.
+ - Looking at the `matmul_sub` call tree, it is a child function of `x_solve, y_solve, z_solve`
+   which all take up a lot of runtime aswell.
+ - `compute_rhs`, `set_constants` and `binvcrhs` all have very short running times but are called a substantial
+   amount of times.
+
 ### s
 | time  | cumulative seconds | self seconds | calls      | self ms/call | total ms/call | name        |
 |-------|------------|----------|------------|---------|---------|-------------|
