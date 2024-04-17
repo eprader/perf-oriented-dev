@@ -19,6 +19,9 @@
             ninja
             bc
             hwloc
+            valgrind
+            massif-visualizer
+            linuxPackages_latest.perf
           ];
 
           shellHook = ''

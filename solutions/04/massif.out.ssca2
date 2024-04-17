@@ -1,0 +1,710 @@
+desc: (none)
+cmd: ./ssca2 17
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=275557
+mem_heap_B=73520
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=278865
+mem_heap_B=73552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=279372
+mem_heap_B=8467272
+mem_heap_extra_B=8112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=284634
+mem_heap_B=8467276
+mem_heap_extra_B=8132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=285209
+mem_heap_B=8482700
+mem_heap_extra_B=8204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3601191
+mem_heap_B=8482700
+mem_heap_extra_B=8204
+mem_stacks_B=0
+heap_tree=detailed
+n3: 8482700 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x402EF3: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402F0A: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 94092 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=3601191
+mem_heap_B=8482696
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=4105206
+mem_heap_B=8477584
+mem_heap_extra_B=8168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=4105238
+mem_heap_B=8477576
+mem_heap_extra_B=8152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=16882735137
+mem_heap_B=9001864
+mem_heap_extra_B=8160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=16916879472
+mem_heap_B=9001864
+mem_heap_extra_B=8160
+mem_stacks_B=0
+heap_tree=detailed
+n4: 9001864 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x402EF3: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402F0A: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x403210: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 88968 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=16916879503
+mem_heap_B=12671880
+mem_heap_extra_B=12192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=17124497918
+mem_heap_B=12671880
+mem_heap_extra_B=12192
+mem_stacks_B=0
+heap_tree=detailed
+n4: 12671880 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x402EF3: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402F0A: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x403442: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 88968 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=17124498917
+mem_heap_B=17375088
+mem_heap_extra_B=16192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=17133936147
+mem_heap_B=17899380
+mem_heap_extra_B=16212
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=17133936182
+mem_heap_B=17899384
+mem_heap_extra_B=16232
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=17134591646
+mem_heap_B=17899384
+mem_heap_extra_B=16232
+mem_stacks_B=0
+heap_tree=detailed
+n7: 17899384 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x402111: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402EF3: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402F0A: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x403442: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x402121: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 73588 in 6 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=17134591739
+mem_heap_B=25763700
+mem_heap_extra_B=24284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=17146126231
+mem_heap_B=25763700
+mem_heap_extra_B=24284
+mem_stacks_B=0
+heap_tree=peak
+n8: 25763700 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x402111: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021A1: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021AD: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402EF3: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x402F0A: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x403442: genScalData (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x401278: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 73584 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=17146127212
+mem_heap_B=9002472
+mem_heap_extra_B=8168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=17156127374
+mem_heap_B=9002476
+mem_heap_extra_B=8188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=17156127640
+mem_heap_B=8986564
+mem_heap_extra_B=8124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=17156129248
+mem_heap_B=9510856
+mem_heap_extra_B=8144
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=17156129543
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=17156291341
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=17156291394
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=17156296588
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=17156296641
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=17156782331
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=17156782384
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=17156833247
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=detailed
+n6: 10035176 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x4021A1: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021AD: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402312: findSubGraphs (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x40137B: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x402323: findSubGraphs (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x40137B: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 73696 in 21 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=17156833300
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=17163649045
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=17163649098
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=17163746179
+mem_heap_B=10035176
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=17163746232
+mem_heap_B=10166248
+mem_heap_extra_B=8192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=17163942374
+mem_heap_B=9641956
+mem_heap_extra_B=8172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=17163942868
+mem_heap_B=8986452
+mem_heap_extra_B=8116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=17163943565
+mem_heap_B=10564428
+mem_heap_extra_B=8148
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=17163948823
+mem_heap_B=10564432
+mem_heap_extra_B=8184
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=17163949378
+mem_heap_B=10579856
+mem_heap_extra_B=8256
+mem_stacks_B=0
+heap_tree=detailed
+n6: 10579856 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x4021A1: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021AD: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 1048576 0x4013CA: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x4015E4: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 94092 in 23 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=17167265319
+mem_heap_B=10579852
+mem_heap_extra_B=8220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=17167769330
+mem_heap_B=10574740
+mem_heap_extra_B=8204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=17167769362
+mem_heap_B=10574732
+mem_heap_extra_B=8188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=17194442707
+mem_heap_B=12671884
+mem_heap_extra_B=8196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=17194442846
+mem_heap_B=13720472
+mem_heap_extra_B=8272
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=17200341194
+mem_heap_B=17914776
+mem_heap_extra_B=12312
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=17201520890
+mem_heap_B=17390484
+mem_heap_extra_B=12292
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=17201521047
+mem_heap_B=18963340
+mem_heap_extra_B=12260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=17201521107
+mem_heap_B=20011916
+mem_heap_extra_B=12268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=17201521145
+mem_heap_B=20012116
+mem_heap_extra_B=12284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=17201521180
+mem_heap_B=20012316
+mem_heap_extra_B=12300
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=17201521215
+mem_heap_B=20012324
+mem_heap_extra_B=12332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=17201521250
+mem_heap_B=21060900
+mem_heap_extra_B=12340
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=48815171509
+mem_heap_B=20012324
+mem_heap_extra_B=12332
+mem_stacks_B=0
+heap_tree=detailed
+n12: 20012324 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x401784: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021A1: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021AD: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 2097152 0x401706: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 2097152 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 1048576 0x4013CA: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 1048576 0x40180C: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 1048576 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 1048576 0x40182D: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 1048576 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x4015E4: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x4017FC: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524288 0x401818: betweennessCentrality (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524288 0x4013D8: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 89376 in 30 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=48815171538
+mem_heap_B=19488036
+mem_heap_extra_B=12324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=48815171567
+mem_heap_B=15293732
+mem_heap_extra_B=8284
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=48815171596
+mem_heap_B=13196580
+mem_heap_extra_B=8276
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=48815171625
+mem_heap_B=12148004
+mem_heap_extra_B=8268
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=48815171654
+mem_heap_B=11623716
+mem_heap_extra_B=8260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=48815171683
+mem_heap_B=10575140
+mem_heap_extra_B=8252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=48815171712
+mem_heap_B=10574940
+mem_heap_extra_B=8236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=48815171741
+mem_heap_B=10574740
+mem_heap_extra_B=8220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=48815171770
+mem_heap_B=10574732
+mem_heap_extra_B=8188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=48815171883
+mem_heap_B=10050444
+mem_heap_extra_B=8180
+mem_stacks_B=0
+heap_tree=detailed
+n5: 10050444 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4194304 0x4021A1: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 4194304 0x4021AD: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 4194304 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 1048576 0x4013CA: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n1: 524292 0x402166: computeGraph (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+  n0: 524292 0x4012C2: main (in /home/eprader/perf-oriented-dev/larger_samples/ssca2/build/ssca2)
+ n0: 88968 in 37 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=48815172038
+mem_heap_B=10045332
+mem_heap_extra_B=8164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=48815172067
+mem_heap_B=10040216
+mem_heap_extra_B=8152
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=48815172096
+mem_heap_B=10035100
+mem_heap_extra_B=8140
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=48815172125
+mem_heap_B=10035028
+mem_heap_extra_B=8124
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=48815172170
+mem_heap_B=8986452
+mem_heap_extra_B=8116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=48815172199
+mem_heap_B=8462160
+mem_heap_extra_B=8096
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=48815172228
+mem_heap_B=4267856
+mem_heap_extra_B=4056
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=48815172257
+mem_heap_B=73552
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=48815172286
+mem_heap_B=73520
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
