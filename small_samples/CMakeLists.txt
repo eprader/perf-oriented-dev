@@ -9,7 +9,7 @@ else()
   add_compile_options(-Wall -Wextra -Wpedantic -Werror)
 endif()
 
-set(OPTIMIZATION_LEVELS 0 1 2 3)
+set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
 set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funswitch-loops -fvect-cost-model=dynamic -fversion-loops-for-strides) 
 
 # Loop over optimization levels and create a separate target for each

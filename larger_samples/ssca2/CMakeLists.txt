@@ -9,7 +9,7 @@ include_directories(src/sprng2.0/include)
 link_libraries(m)
 add_definitions(-DLittleEndian, -DAdd__)
 
-set(OPTIMIZATION_LEVELS 0 1 2 3)
+set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
 
 foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
   set(P ssca2_O${OPT_LEVEL})
