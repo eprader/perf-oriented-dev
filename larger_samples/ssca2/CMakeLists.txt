@@ -9,4 +9,11 @@ include_directories(src/sprng2.0/include)
 link_libraries(m)
 add_definitions(-DLittleEndian, -DAdd__)
 
-add_executable(ssca2 ${SOURCE_FILES})
+set(OPTIMIZATION_LEVELS 0 1 2 3)
+
+foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
+  set(P ssca2_O${OPT_LEVEL})
+
+  add_executable(${P} ${SOURCE_FILES})
+  target_compile_options(${P} PRIVATE -O${OPT_LEVEL})
+endforeach()

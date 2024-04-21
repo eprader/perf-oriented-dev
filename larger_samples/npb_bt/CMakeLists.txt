@@ -13,17 +13,17 @@ file(GLOB_RECURSE SOURCE_FILES CONFIGURE_DEPENDS src/*.c src/*.h)
 
 link_libraries(m)
 
-add_executable(npb_bt_w ${SOURCE_FILES})
-target_include_directories(npb_bt_w PRIVATE src/w)
+set(SIZES w s a b c)
+set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
 
-add_executable(npb_bt_s ${SOURCE_FILES})
-target_include_directories(npb_bt_s PRIVATE src/s)
+foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
+  foreach(SIZE ${SIZES})
+    set(CMAKE_CXX_FLAGS "-O${OPT_LEVEL}")
+    set(CMAKE_CXX_FLAGS "-O${OPT_LEVEL}")
+    set(P npb_bt_${SIZE}_O${OPT_LEVEL})
 
-add_executable(npb_bt_a ${SOURCE_FILES})
-target_include_directories(npb_bt_a PRIVATE src/a)
-
-add_executable(npb_bt_b ${SOURCE_FILES})
-target_include_directories(npb_bt_b PRIVATE src/b)
-
-add_executable(npb_bt_c ${SOURCE_FILES})
-target_include_directories(npb_bt_c PRIVATE src/c)
+    add_executable(${P} ${SOURCE_FILES})
+    target_include_directories(${P} PRIVATE src/w)
+    target_compile_options(${P} PRIVATE -O${OPT_LEVEL})
+  endforeach()
+endforeach()
