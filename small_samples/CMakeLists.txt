@@ -22,6 +22,7 @@ foreach(OPT ${OPTIMIZATION_LEVELS})
 
   add_executable(nbody_O${OPT} nbody/nbody.c)
   target_link_libraries(nbody_O${OPT} m)
+  targer_compile_definitions(nbody_O${OPT} PRIVATE M=400)
   target_compile_options(nbody_O${OPT} PRIVATE -O${OPT})
 
   add_executable(qap_O${OPT} qap/qap.c)
