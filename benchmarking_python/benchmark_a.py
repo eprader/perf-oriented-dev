@@ -50,7 +50,7 @@ if __name__ == "__main__":
         + [
             (
                 "../larger_samples/npb_bt/build/npb_bt_w",
-                "npb_bt_w" + optimization,
+                "npb_bt_w_" + optimization,
             )
             for optimization in optimizations
         ]
