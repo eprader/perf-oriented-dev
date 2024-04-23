@@ -57,7 +57,7 @@ if __name__ == "__main__":
         + [
             (
                 "../larger_samples/ssca2/build/ssca2_" + optimization + " 15",
-                "ssca2_15" + optimization,
+                "ssca2_15_" + optimization,
             )
             for optimization in optimizations
         ]
