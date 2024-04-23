@@ -43,7 +43,7 @@ if __name__ == "__main__":
         + [
             (
                 small_samples_dir + "delannoy_" + optimization + " 13",
-                "delannoy_" + optimization,
+                "delannoy_13_" + optimization,
             )
             for optimization in optimizations
         ]
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         + [
             (
                 "../larger_samples/ssca2/build/ssca2_" + optimization + " 15",
-                "npb_bt_w" + optimization,
+                "ssca2_15" + optimization,
             )
             for optimization in optimizations
         ]

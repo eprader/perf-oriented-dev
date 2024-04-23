@@ -31,7 +31,7 @@ class SlurmJob:
 
     def dispatch(self):
         # store job.sh
-        with open(self.job_script_name) as file:
+        with open(self.job_script_name + ".sh", "w") as file:
             file.write(self.job_script)
         os.system(f"sbatch ./{self.job_script_name}")
         # print(self.job_script)
