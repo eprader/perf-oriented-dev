@@ -24,7 +24,7 @@ plt.figure()
 
 # Add labels and title
 plt.xlabel("Optimisations")
-plt.ylabel("Average Runtime With StD")
+plt.ylabel("Average Runtime With StD (s)")
 plt.title(sys.argv[1])
 for optimisation in optimisations:
     file_name = f"{sys.argv[1]}_{optimisation}"
