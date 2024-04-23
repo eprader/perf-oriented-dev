@@ -7,11 +7,11 @@ from TimeProfiler import TimeProflier
 if __name__ == "__main__":
     optimizations = [
         "O0",
-        # "O1",
-        # "O2",
-        # "O3",
-        # "Ofast",
-        # "Os",
+        "O1",
+        "O2",
+        "O3",
+        "Ofast",
+        "Os",
     ]
 
     small_samples_dir: str = "../small_samples/build/"
