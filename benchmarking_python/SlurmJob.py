@@ -22,6 +22,7 @@ class SlurmJob:
             "# SBATCH --ntasks-per-node=1\n"
             "# SBATCH --exclusive\n"
         )
+        self.job_script_name = job_name
 
         if shell_command:
             self.job_script = self.job_script + shell_command + "\n"
@@ -29,5 +30,8 @@ class SlurmJob:
             self.job_script = self.job_script + profiler.get_bash_script()
 
     def dispatch(self):
-        os.system(f"sbatch <<EOF\n{self.job_script}\nEOF")
+        # store job.sh
+        with open(self.job_script_name) as file:
+            file.write(self.job_script)
+        os.system(f"sbatch ./{self.job_script_name}")
         # print(self.job_script)
