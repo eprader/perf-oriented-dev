@@ -30,4 +30,4 @@ class SlurmJob:
 
     def dispatch(self):
         os.system(f"sbatch <<EOF\n{self.job_script}\nEOF")
-        # os.system(self.job_script)
+        # print(self.job_script)

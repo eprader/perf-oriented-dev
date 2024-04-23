@@ -54,7 +54,10 @@ class TimeProflier(Profiler):
         if self.repetitions > 1:
             bash_script += (
                 f"for i in $(seq 2 {self.repetitions}); do\n"
-                f"    echo ',' >> {self.output_json}\n" + profile_command + "done\n"
+                f"    echo ',' >> {self.output_json}\n"
+                + "    "
+                + profile_command
+                + "done\n"
             )
 
         bash_script += f"echo ']' >> {self.output_json}"
