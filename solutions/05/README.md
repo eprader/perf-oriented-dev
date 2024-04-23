@@ -34,3 +34,39 @@ done
 ![delannoy_13](./delannoy_13.png)
 ![npb_bt_w](./npb_bt_w.png)
 ![ssca2_15](./ssca2_15.png)
+
+
+## B)
+```bash
+gcc -Q --help=optimizers -O2 | grep enabled > O2.txt
+gcc -Q --help=optimizers -O3 | grep enabled > O3.txt
+diff O2.txt O3.txt
+```
+
+This will result in the following output:
+
+    28a29
+    >   -fgcse-after-reload         		[enabled]
+    41a43
+    >   -fipa-cp-clone              		[enabled]
+    61a64,65
+    >   -floop-interchange          		[enabled]
+    >   -floop-unroll-and-jam       		[enabled]
+    69a74
+    >   -fpeel-loops                		[enabled]
+    72a78
+    >   -fpredictive-commoning      		[enabled]
+    96a103,104
+    >   -fsplit-loops               		[enabled]
+    >   -fsplit-paths               		[enabled]
+    117a126
+    >   -ftree-loop-distribution    		[enabled]
+    121a131
+    >   -ftree-partial-pre          		[enabled]
+    134a145,146
+    >   -funroll-completely-grow-size 	[enabled]
+    >   -funswitch-loops            		[enabled]
+    135a148
+    >   -fversion-loops-for-strides 		[enabled]
+
+
