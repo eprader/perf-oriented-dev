@@ -12,19 +12,6 @@ if __name__ == "__main__":
         # "O3",
         # "Ofast",
         # "Os",
-        # "fgcse_after_reload",
-        # "fpeel_loops",
-        # "ftree_loop_distribution",
-        # "fversion_loops_for_strides",
-        # "fipa_cp_clone",
-        # "fpredictive_commoning",
-        # "ftree_partial_pre",
-        # "floop_interchange",
-        # "fsplit_loops",
-        # "funswitch_loops",
-        # "floop_unroll_and_jam",
-        # "fsplit_paths",
-        # "fvect_cost_model_dynamic",
     ]
 
     small_samples_dir: str = "../small_samples/build/"
@@ -69,7 +56,7 @@ if __name__ == "__main__":
         ]
         + [
             (
-                "../larger_samples/ssca2/build/ssca2_" + optimization + "15",
+                "../larger_samples/ssca2/build/ssca2_" + optimization + " 15",
                 "npb_bt_w" + optimization,
             )
             for optimization in optimizations
