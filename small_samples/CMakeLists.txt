@@ -21,7 +21,7 @@ foreach(OPT ${OPTIMIZATION_LEVELS})
   target_compile_options(delannoy_O${OPT} PRIVATE -O${OPT})
 
   add_executable(nbody_O${OPT} nbody/nbody.c)
-  add_definitions( -DM=400 )
+  add_definitions(-DM=400)
   target_link_libraries(nbody_O${OPT} m)
   target_compile_options(nbody_O${OPT} PRIVATE -O${OPT})
 
