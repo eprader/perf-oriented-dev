@@ -10,7 +10,7 @@ else()
 endif()
 
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funswitch-loops -fversion-loops-for-strides) 
+set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops version-loopsor-strides) 
 
 # Loop over optimization levels and create a separate target for each
 foreach(OPT ${OPTIMIZATION_LEVELS})
@@ -36,24 +36,24 @@ foreach(OPT ${OPTIMIZATION_LEVELS})
 endforeach()
 
 foreach(OPT ${OPT_FLAGS})
-  string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT})
+  # string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT})
 
-  add_executable(mmul${OPT_NAME} mmul/mmul.c)
-  target_compile_options(mmul${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(mmul${OPT} mmul/mmul.c)
+  target_compile_options(mmul${OPT} PRIVATE -O2 -f${OPT})
 
-  add_executable(delannoy${OPT_NAME} delannoy/delannoy.c)
-  target_compile_options(delannoy${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(delannoy${OPT} delannoy/delannoy.c)
+  target_compile_options(delannoy${OPT} PRIVATE -O2 -f${OPT})
 
-  add_executable(nbody${OPT_NAME} nbody/nbody.c)
-  target_link_libraries(nbody${OPT_NAME} m)
-  target_compile_options(nbody${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(nbody${OPT} nbody/nbody.c)
+  target_link_libraries(nbody${OPT} m)
+  target_compile_options(nbody${OPT} PRIVATE -O2 -f${OPT})
 
-  add_executable(qap${OPT_NAME} qap/qap.c)
-  target_compile_options(qap${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(qap${OPT} qap/qap.c)
+  target_compile_options(qap${OPT} PRIVATE -O2 -f${OPT})
 
-  add_executable(filesearch${OPT_NAME} filesearch/filesearch.c)
-  target_compile_options(filesearch${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(filesearch${OPT} filesearch/filesearch.c)
+  target_compile_options(filesearch${OPT} PRIVATE -O2 -f${OPT})
 
-  add_executable(filegen${OPT_NAME} filegen/filegen.c)
-  target_compile_options(filegen${OPT_NAME} PRIVATE -O2 ${OPT})
+  add_executable(filegen${OPT} filegen/filegen.c)
+  target_compile_options(filegen${OPT} PRIVATE -O2 -f${OPT})
 endforeach()

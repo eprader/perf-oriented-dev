@@ -10,7 +10,7 @@ link_libraries(m)
 add_definitions(-DLittleEndian, -DAdd__)
 
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funswitch-loops) 
+set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops) 
 
 foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
   set(P ssca2_O${OPT_LEVEL})
@@ -20,10 +20,10 @@ foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
 endforeach()
 
 foreach(OPT_FLAG ${OPT_FLAGS})
-  string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT_FLAG})
+  # string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT_FLAG})
   set(P ssca2_${OPT_NAME})
 
   add_executable(${P} ${SOURCE_FILES})
-  target_compile_options(${P} PRIVATE -O2 ${OPT_FLAG})
+  target_compile_options(${P} PRIVATE -O2 -f${OPT_FLAG})
 endforeach()
 
