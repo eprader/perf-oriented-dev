@@ -21,7 +21,7 @@ endforeach()
 
 foreach(OPT_FLAG ${OPT_FLAGS})
   # string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT_FLAG})
-  set(P ssca2_${OPT_NAME})
+  set(P ssca2_${OPT_FLAG})
 
   add_executable(${P} ${SOURCE_FILES})
   target_compile_options(${P} PRIVATE -O2 -f${OPT_FLAG})
