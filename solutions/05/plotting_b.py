@@ -6,28 +6,22 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 if __name__ == "__main__":
-    # if len(sys.argv) != 2:
-    #     print(
-    #         "Usage: python plotting_a.py <file_name> (Example: python plotting_a.py qap_chr15c)"
-    #     )
-    #     sys.exit(1)
-
-    # optimisations = [
-    #     "fgcse-after-reload",
-    #     "fipa-cp-clone",
-    #     "floop-interchange",
-    #     "floop-unroll-and-jam",
-    #     "fpeel-loops",
-    #     "fpredictive-commoning",
-    #     "fsplit-loops",
-    #     "fsplit-paths",
-    #     "ftree-loop-distribution",
-    #     "ftree-partial-pre",
-    #     # "funroll-completely-grow-size", NOTE: Not valid for `C`
-    #     "funswitch-loops",
-    #     # "fversion-loops-for-strides", NOTE: Fails for `npb_bt`
-    # ]
-    optimisations = ["O0", "O1", "O2", "O3", "Ofast", "Os"]
+    optimisations = [
+        "fgcse-after-reload",
+        "fipa-cp-clone",
+        "floop-interchange",
+        "floop-unroll-and-jam",
+        "fpeel-loops",
+        "fpredictive-commoning",
+        "fsplit-loops",
+        "fsplit-paths",
+        "ftree-loop-distribution",
+        "ftree-partial-pre",
+        # "funroll-completely-grow-size", NOTE: Not valid for `C`
+        "funswitch-loops",
+        # "fversion-loops-for-strides", NOTE: Fails for `npb_bt`
+    ]
+    # optimisations = ["O0", "O1", "O2", "O3", "Ofast", "Os"]
 
     commands = ["mmul", "nbody", "qap_chr15c", "delannoy_13", "npb_bt_w", "ssca2_15"]
     optimisation_to_count = {optimisation: 0 for optimisation in optimisations}
