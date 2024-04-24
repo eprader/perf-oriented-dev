@@ -84,4 +84,5 @@ This will result in the following output:
     135a148
     >   -fversion-loops-for-strides 		[enabled]
 
-These are the optimization flags that get added when compiling with -O2
+
+> `-fversion-loops-for-strides` throws a compilation error for `npb_bt`.
