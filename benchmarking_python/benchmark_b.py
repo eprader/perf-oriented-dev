@@ -6,19 +6,19 @@ from TimeProfiler import TimeProflier
 
 if __name__ == "__main__":
     optimizations = [
-        "fgcse-after-reload",
-        "fipa-cp-clone",
-        "floop-interchange",
-        "floop-unroll-and-jam",
-        "fpeel-loops",
-        "fpredictive-commoning",
-        "fsplit-loops",
-        "fsplit-paths",
-        "ftree-loop-distribution",
-        "ftree-partial-pre",
-        # "funroll-completely-grow-size", NOTE: Not valid for `C`
-        "funswitch-loops",
-        # "fversion-loops-for-strides", NOTE: Fails for `npb-bt`
+        "gcse-after-reload",
+        "ipa-cp-clone",
+        "loop-interchange",
+        "loop-unroll-and-jam",
+        "peel-loops",
+        "predictive-commoning",
+        "split-loops",
+        "split-paths",
+        "tree-loop-distribution",
+        "tree-partial-pre",
+        # "unroll-completely-grow-size", NOTE: Not valid for `C`
+        "unswitch-loops",
+        # "version-loops-for-strides", NOTE: Fails for `npb-bt`
     ]
 
     small_samples_dir: str = "../small_samples/build/"
