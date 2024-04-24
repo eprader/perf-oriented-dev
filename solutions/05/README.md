@@ -84,8 +84,56 @@ This will result in the following output:
     135a148
     >   -fversion-loops-for-strides 		[enabled]
 
-
+> [!NOTE]
 > `-fversion-loops-for-strides` throws a compilation error for `npb_bt`.
+> `-funroll-completely-grow-size` also threw an error.
+
+`plotting_b.py` plots the average runtimes an prints the best performing command to std out
+as well as the 3 best performing flags based on a penalty score.
+
+flag with lowest average runtime:
+
+mmul: unswitch-loops
+nbody: gcse-after-reload
+qap: loop-interchange
+delannoy: unswitch-loops 13
+npb_bt_w: peel-loops
+ssca2: unswitch-loops
+
+Ranking for best performing overall:
+This was acquired by adding up the `position` in the sorted list of average runtimes.
+
+{'gcse-after-reload': 25, 'ipa-cp-clone': 42, 'loop-interchange': 29, 'loop-unroll-and-jam': 36, 'peel-loops': 25, 'predictive-commoning': 28, 'split-loops': 35, 'split-paths': 34, 'tree-loop-distribution': 21, 'tree-partial-pre': 28, 'unswitch-loops': 27}
+
+\['tree-loop-distribution', 'gcse-after-reload', 'peel-loops'\]
+
+explanations from ![gcc.gnu.org](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html)
+
+### `tree-loop-distribution`
+Perform loop distribution. This flag can improve cache performance on big loop bodies and allow further loop optimizations, like parallelization or vectorization, to take place. For example, the loop
+
+DO I = 1, N
+  A(I) = B(I) + C
+  D(I) = E(I) * F
+ENDDO
+
+is transformed to
+
+DO I = 1, N
+   A(I) = B(I) + C
+ENDDO
+DO I = 1, N
+   D(I) = E(I) * F
+ENDDO
+
+### gcse-after-reload
+When -fgcse-after-reload is enabled, a redundant load elimination pass is performed after reload. The purpose of this pass is to clean up redundant spilling.
+
+### `peel-loops`
+Peels loops for which there is enough information that they do not roll much (from profile feedback or static analysis). It also turns on complete loop peeling (i.e. complete removal of loops with small constant number of iterations).
+
+### `unswitch-loops`
+Move branches with loop invariant conditions out of the loop, with duplicates of the loop on both branches (modified according to result of the condition).
 
 ![mmul](./b/mmul.png)
 ![nbody](./b/nbody.png)
