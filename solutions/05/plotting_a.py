@@ -14,15 +14,9 @@ if __name__ == "__main__":
 
 optimisations = ["O0", "O1", "O2", "O3", "Ofast", "Os"]
 file_names = [f"{sys.argv[1]}_{optimisation}" for optimisation in optimisations]
-# Create bar plot
-# Create an empty plot
 plt.figure()
 
-# Iterate through the data and add bars one by one
-# for i in range(len(categories)):
-#     plt.bar(categories[i], values[i])
 
-# Add labels and title
 plt.xlabel("Optimisations")
 plt.ylabel("Average Runtime With StD (s)")
 plt.title(sys.argv[1])
