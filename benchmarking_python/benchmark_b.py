@@ -6,16 +6,16 @@ from TimeProfiler import TimeProflier
 
 if __name__ == "__main__":
     optimizations = [
-        "fgcse-after-reload",
-        "fipa-cp-clone",
-        "floop-interchange",
-        "floop-unroll-and-jam",
-        "fpeel-loops",
-        "fpredictive-commoning",
-        "fsplit-loops",
-        "fsplit-paths",
-        "ftree-loop-distribution",
-        "ftree-partial-pre",
+        # "fgcse-after-reload",
+        # "fipa-cp-clone",
+        # "floop-interchange",
+        # "floop-unroll-and-jam",
+        # "fpeel-loops",
+        # "fpredictive-commoning",
+        # "fsplit-loops",
+        # "fsplit-paths",
+        # "ftree-loop-distribution",
+        # "ftree-partial-pre",
         # "funroll-completely-grow-size", NOTE: Not valid for `C`
         "funswitch-loops",
         # "fversion-loops-for-strides", NOTE: Fails for `npb_bt`
