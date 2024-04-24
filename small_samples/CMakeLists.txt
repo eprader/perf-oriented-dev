@@ -10,7 +10,7 @@ else()
 endif()
 
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops version-loopsor-strides) 
+set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops version-loops-for-strides)
 
 # Loop over optimization levels and create a separate target for each
 foreach(OPT ${OPTIMIZATION_LEVELS})

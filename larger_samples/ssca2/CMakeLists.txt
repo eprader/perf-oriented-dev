@@ -10,7 +10,7 @@ link_libraries(m)
 add_definitions(-DLittleEndian, -DAdd__)
 
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops) 
+set(OPT_FLAGS gcse-after-reload ipa-cp-clone loop-interchange loop-unroll-and-jam peel-loops predictive-commoning split-loops split-paths tree-loop-distribution tree-partial-pre unswitch-loops version-loops-for-strides)
 
 foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
   set(P ssca2_O${OPT_LEVEL})
