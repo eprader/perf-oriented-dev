@@ -10,7 +10,7 @@ else()
 endif()
 
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funroll-completely-grow-size -funswitch-loops -fversion-loops-for-strides) 
+set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funswitch-loops -fversion-loops-for-strides) 
 
 # Loop over optimization levels and create a separate target for each
 foreach(OPT ${OPTIMIZATION_LEVELS})

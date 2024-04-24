@@ -15,7 +15,7 @@ link_libraries(m)
 
 set(SIZES w s a b c)
 set(OPTIMIZATION_LEVELS 0 1 2 3 s fast)
-set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funroll-completely-grow-size -funswitch-loops -fversion-loops-for-strides ) 
+set(OPT_FLAGS -fgcse-after-reload -fipa-cp-clone -floop-interchange -floop-unroll-and-jam -fpeel-loops -fpredictive-commoning -fsplit-loops -fsplit-paths -ftree-loop-distribution -ftree-partial-pre -funswitch-loops -fversion-loops-for-strides) 
 
 foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
   foreach(SIZE ${SIZES})
