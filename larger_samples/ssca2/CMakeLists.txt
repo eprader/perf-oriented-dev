@@ -20,7 +20,8 @@ foreach(OPT_LEVEL ${OPTIMIZATION_LEVELS})
 endforeach()
 
 foreach(OPT_FLAG ${OPT_FLAGS})
-  set(P ssca2_${OPT_FLAGS})
+  string(REGEX REPLACE "[-=]" "_" OPT_NAME ${OPT_FLAG})
+  set(P ssca2_${OPT_NAME})
 
   add_executable(${P} ${SOURCE_FILES})
   target_compile_options(${P} PRIVATE -O2 ${OPT_FLAG})
