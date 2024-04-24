@@ -28,6 +28,21 @@ do
 done
 ```
 
+### Findings
+For `mmul`, `qap` and `npb` the only significant optimization was from moving from no optimization to any optimization.
+The average runtimes appear to be consistent after this first optimization level.
+
+For `nbody` the `-Ofast` optimization performed the best which makes sense as a lot of simulation is performed in this application.
+
+For `delannoy` we can see that `-Os` has a significant negative impact on runtime which is not the case for the other applications.
+This is also the only application where `-O1` performs significantly worse that the following optimization levels.
+
+For `ssca2` we can see that overall the optimizations have had the least impact on performance.
+Given the fact that this program is operating on a graph and thereby bound by memory access,
+runtime optimizations will not have that big of an impact.
+
+Overall no significant differences between `-O2` and `-O3` can be seen, which I find a bit surprising...
+
 ![mmul](./mmul.png)
 ![nbody](./nbody.png)
 ![qap_chr15c](./qap_chr15c.png)
@@ -69,4 +84,4 @@ This will result in the following output:
     135a148
     >   -fversion-loops-for-strides 		[enabled]
 
-
+These are the optimization flags that get added when compiling with -O2
