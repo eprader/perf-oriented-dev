@@ -30,6 +30,8 @@ if __name__ == "__main__":
     optimisations = ["O0", "O1", "O2", "O3", "Ofast", "Os"]
 
     commands = ["mmul", "nbody", "qap_chr15c", "delannoy_13", "npb_bt_w", "ssca2_15"]
+    optimisation_to_count = {optimisation: 0 for optimisation in optimisations}
+
     for command in commands:
         plt.figure()
         plt.xlabel("Optimisations")
@@ -60,5 +62,15 @@ if __name__ == "__main__":
         plt.savefig(f"{command}.png")
 
         sorted_mean = sorted(all_means, key=lambda x: x[1])
-        best_perfroming = [command[0] for command in sorted_mean[:1]]
-        print(best_perfroming)
+        for i, tup in enumerate(sorted_mean):
+            command_str = tup[0]
+            only_command = command_str.split()[0]
+            last_part = only_command.split("_")[-1]
+            optimisation_to_count[last_part] = optimisation_to_count[last_part] + i
+        best_performing = [command[0] for command in sorted_mean[:1]]
+        print(best_performing)
+
+    smallest_keys = sorted(optimisation_to_count.items(), key=lambda item: item[1])[:3]
+    smallest_keys = [item[0] for item in smallest_keys]
+    print(optimisation_to_count)
+    print(smallest_keys)
