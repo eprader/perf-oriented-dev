@@ -43,12 +43,12 @@ runtime optimizations will not have that big of an impact.
 
 Overall no significant differences between `-O2` and `-O3` can be seen, which I find a bit surprising...
 
-![mmul](./mmul.png)
-![nbody](./nbody.png)
-![qap_chr15c](./qap_chr15c.png)
-![delannoy_13](./delannoy_13.png)
-![npb_bt_w](./npb_bt_w.png)
-![ssca2_15](./ssca2_15.png)
+![mmul](./a/mmul.png)
+![nbody](./a/nbody.png)
+![qap_chr15c](./a/qap_chr15c.png)
+![delannoy_13](./a/delannoy_13.png)
+![npb_bt_w](./a/npb_bt_w.png)
+![ssca2_15](./a/ssca2_15.png)
 
 
 ## B)
@@ -86,3 +86,10 @@ This will result in the following output:
 
 
 > `-fversion-loops-for-strides` throws a compilation error for `npb_bt`.
+
+![mmul](./b/mmul.png)
+![nbody](./b/nbody.png)
+![qap_chr15c](./b/qap_chr15c.png)
+![delannoy_13](./b/delannoy_13.png)
+![npb_bt_w](./b/npb_bt_w.png)
+![ssca2_15](./b/ssca2_15.png)
