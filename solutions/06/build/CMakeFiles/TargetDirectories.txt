@@ -1,0 +1,3 @@
+/home/eprader/perf-oriented-dev/solutions/06/build/CMakeFiles/mmul.dir
+/home/eprader/perf-oriented-dev/solutions/06/build/CMakeFiles/edit_cache.dir
+/home/eprader/perf-oriented-dev/solutions/06/build/CMakeFiles/rebuild_cache.dir
