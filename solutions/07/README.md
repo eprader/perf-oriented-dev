@@ -18,6 +18,9 @@ cd build
 cmake -DCMAKE_BUILD_TYPE=Release -G Ninja ../code
 ```
 
+>[!NOTE]
+> Usint `srun --pty bash` appears to massively increase compilation time compared to the login node.
+> The following measurements were taken on the login node.
 ## Default allocator
 
 ```
