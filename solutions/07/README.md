@@ -79,9 +79,9 @@ memory: 588664
 
 
 # Review
-[user](./runtimes.png)
-[wall](./wall_time.png)
-[memory](./memory.png)
+![user](./runtimes.png)
+![wall](./wall_time.png)
+![memory](./memory.png)
 
 The optimized allocators had more than 100% cpu usage. This would suggest multithreading of the allocator?
 User time was also higher meaning more CPU utilization overall.
