@@ -1,10 +1,10 @@
 # A) False Sharing
 When different threads modify data from the same cache line at the same time, this leads to cache invalidation which might lead to performance issues.
 
-The PR KhronosGroup/Vulkan-ValidationLayers#5587 solves such an issue.
+The PR KhronosGroup/Vulkan-ValidationLayers#5587 refactors a solution to such an issue and attempts to do so for multiple platforms.
 
 In the above PR mutex locks are padded to be on separate cache lines so that concurrent access to these locks does not lead to false sharing.
-The PR replaces the original manual padding with a method call of `alignas` with a custom constant expression `get_hardware_destructive_interference_size()`
+The PR replaces the original manual padding with `alignas` with a custom constant expression `get_hardware_destructive_interference_size()`
 which evaluates to `64`. The intent is to use existing means for padding instead of a handcrafted solution.
 
 Originally the PR mentions the constant `std::hardware_destructive_interference_size` which would provide a uniform interface to read the 
